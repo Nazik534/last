@@ -1,472 +1,69 @@
-<title> terraria </title>
-<body>
-<header>
 
-    <img src="data:image/jpeg;base64,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">
-
-
-
-<h1  id="efter"> Що таке терарія? </h1>
- <nav><a href="#efter"><img src="https://terraria.wiki.gg/images/thumb/c/cb/Terraria_icon.png/16px-Terraria_icon.png"class="coin">головна<img src="https://terraria.wiki.gg/images/thumb/c/cb/Terraria_icon.png/16px-Terraria_icon.png"class="coin"></a>
-<a href="#don"><img src="https://terraria.wiki.gg/images/thumb/c/cb/Terraria_icon.png/16px-Terraria_icon.png"class="coin">усі Версії<img src="https://terraria.wiki.gg/images/thumb/c/cb/Terraria_icon.png/16px-Terraria_icon.png"class="coin"</a>
-<a href="https://terraria.org/store"> <img src="https://terraria.wiki.gg/images/b/b0/Gold_Coin.gif" class="coin"> магазин <img src="https://terraria.wiki.gg/images/b/b0/Gold_Coin.gif" class="coin"></a></nav>
-</header>
-<main>
-
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxvPPh5dPB4nBmK_8LvUryPnF5EOK8RPHBwQ&usqp=CAU">
-
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmnjKS38fnqxBDnOPhMpC6T6BuT61ErKBRuQ&usqp=CAU">
-
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEoFacJFCZCcmt7XcX8hQGOKCRzet5RuPOrA&usqp=CAU">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrZUN0XVKiqW29gooR6L6ddRp99VrGd81odw&usqp=CAU"class="loas">
-<p> Terraria — компьютерная игра в жанре приключенческой песочницы, <b>разработанная американской студией Re-Logic.</b> Была выпущена в 2011 году для компьютеров Microsoft Windows с распространением через систему цифровой дистрибуции Steam. После выхода Terraria была портирована на другие операционные системы для персональных компьютеров и мобильных устройств, </p>
-<p>Terraria — страна приключений! Страна загадок! Страна, в которой можно строить, отбиваться и веселиться. Ваши возможности в Terraria безграничны. Вы крутой геймер, любящий пострелять? Великий строитель? Коллекционер? Исследователь? Каждый найдёт здесь своё место.
-</p>
-<p>
-Попробуйте построить небольшое убежище, затем отправляйтесь добывать руду и прочие припасы. <b>Исследуйте и создавайте более 500 видов оружия дальнего и ближнего боя, магическое и призывающее, и даже броню, которая поможет справиться с сотнями противников.</b> В дальнейшем вам предстоит столкнуться лицом к лицу с <b>огромными боссами.</b> Рыбачьте, катайтесь, ищите парящие острова, стройте жильё для жителей и не только.</p>
-
-<h2 id="five"> усі вурсії </h2>
-<table id="don">
-<tr>
-<td>Версія</td>    
-<td>Дата випуска</td>
-<td>Назва</td>
-<td>Крупные и ключевые нововведения</td>
-</tr>
-<tr>
-<td id="five">1.0</td>
-<td>16 мая 2011</td>
-<td>Официальный релиз</td>
-<td></td>
-</tr>
-<tr>
-<td>1.0.1</td>
-<td>17 мая 2011</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.0.2</td>
-<td>23 мая 2011</td>
-<td></td>
-<td>Липкая бомба</td>
-</tr>
-<tr>
-<td id="five">1.0.3</td>
-<td>2 июня 2011</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.0.4</td>
-<td>10 июня 2011</td>
-<td></td>
-<td> <img src="https://terraria.wiki.gg/images/thumb/5/5e/Map_Icon_King_Slime.png/24px-Map_Icon_King_Slime.png"class="Coin">Король слізнів</td>
-</tr>
-<tr>
-<td id="five">1.0.5</td>
-<td>23 июня 2011</td>
-<td></td>
-<td><img src="https://terraria.wiki.gg/images/thumb/4/47/Healing_Potion.png/15px-Healing_Potion.png"class="coin">Зелья</td>
-</tr>
-<tr>
-<td>1.0.6</td>
-<td>9 августа 2011</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.0.6.1</td>
-<td>17 августа 2011</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.1</td>
-<td>1 декабря 2011</td>
-<td>Террария 1.1</td>
-<td>Сложный режим, механизмы, модификаторы для предметов</td>
-</tr>
-<tr>
-<td id="five">1.1.1</td>
-<td>15 декабря 2011</td>
-<td>Рождественское обновление!</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.1.2</td>
-<td>17 января 2012</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.2</td>
-<td>30 сентября 2013</td>а
-<td>Террария 1.2</td>
-<td>Багрянец, хлорофит, храм джунглей, Плантера</td>
-</tr>
-<tr>
-<td id="five">1.2.1</td>
-<td>25 октября 2013</td>
-<td>Хэллоуинское обновление!</td>
-<td>Хэллоуин и тыквенная луна</td>
-</tr>
-<tr>
-<td id="five">1.2.1.1</td>
-<td>26 октября 2013</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.2.1.2</td>
-<td>31 октября 2013</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.2.2</td>
-<td>20 декабря 2013</td>
-<td>Рождественское обновление!</td>
-<td>Морозна луна</td>
-</tr>
-<tr>
-<td id="five">1.2.3</td>
-<td>13 февраля 2014</td>
-<td>Дополнения</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.2.3.1</td>
-<td>18 февраля 2014</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.2.4.1</td>
-<td>15 мая 2014</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.3.0.1</td>
-<td>30 июня 2015</td>
-<td>Террария 1.3</td>
-<td>Лунные события, марсианское безумие, режим эксперта</td>
-</tr>
-<tr>
-<td>1.3.0.2</td>
-<td>30 июня 2015</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.3.0.3</td>
-<td>2 июля 2015</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td>1.3.0.4</td>
-<td>9 июля 2015</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.3.0.5</td>
-<td>13 июля 2015</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.3.0.6</td>
-<td>20 июля 2015</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.3.0.7</td>
-<td>23 июля 2015</td>
-<td>Бета-версии Mac и Linux</td>
-<td></td>    
-</tr>
-<tr>
-<td id="five">1.3.0.8</td>  
-<td>12 августа 2015</td>  
-<td>Релиз Mac и Linux</td>  
-<td></td>  
-</tr>
-<tr>
-<td id="five">1.3.1</td>  
-<td>22 мая 2016</td>  
-<td>Проводное обновление!</td>  
-<td>Поддержка контроллера, значительные улучшения системы проводов и механизмов</td>  
-</tr>
-<tr>
-<td id="five">1.3.1.1</td>
-<td>31 мая 2016</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.3.2</td>  
-<td>20 июня 2016</td>  
-<td>Вечериночное обновление!</td>  
-<td>Сортировка предметов в сундуках, возможность выбора генерации порчи или багрянца (после победы над Стеной плоти), больше декоративных объектов в стиле вечеринки</td>  
-</tr>
-<tr>
-<td id="five">1.3.2.1</td>
-<td>21 июня 2016</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.3.3</td>
-<td>9 сентября 2016</td>
-<td>Пустынное обновление</td>
-<td>Подземная пустыня</td>
-</tr>
-<tr>
-<td id="five">1.3.3.1</td>
-<td>11 сентября 2016</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.3.3.2</td>
-<td>13 сентября 2016</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.3.3.3</td>
-<td>3 октября 2016</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.3.4</td>
-<td>15 ноября 2016</td>
-<td>Обновление из кроссовера «Защитники Подземелья II»</td>
-<td>Новые эффекты воды, новые события типа «защита башни» с содержимым из кроссовера по игре Dungeon Defenders 2 («Защитники Подземелья II»)</td>
-</tr>
-<tr>
-<td id="five">1.3.4.1</td>
-<td>16 ноября 2016</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.3.4.2</td>
-<td>17 ноября 2016</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.3.4.3</td>
-<td>18 ноября 2016</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.3.4.4</td>
-<td>6 декабря 2016</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.3.5</td>
-<td>19 апреля 2017</td>
-<td>Шлифовка и исправления</td>
-<td>Поддержка разрешающей способность 4K, масштабирование зума и пользовательского интерфейса, локализация на другие языки, золотая, кристальная и родовая мебель, а также возвращение Redigit'а в команду.</td>
-</tr>
-<tr>
-<td id="five">1.3.5.1</td>
-<td>19 апреля 2017</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.3.5.2</td>
-<td>21 апреля 2017</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.3.5.3</td>
-<td>25 апреля 2017</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.4.0.1</td>
-<td>16 мая 2020</td>
-<td>Конец путешествия</td>
-<td>Предполагаемый режим творчества. Режим мастера. Гольф. Пилоны. Кладбище. Оазис.</td>
-</tr>
-<tr>
-<td id="five">1.4.0.2</td>
-<td>17 мая 2020</td>
-<td>Исправления</td>
-<td>Исправлены ошибки и внесены незначительные изменения в баланс игры.</td>
-</tr>
-<tr>
-<td id="five">1.4.0.3</td>
-<td>20 мая 2020</td>
-<td>Исправления</td>
-<td>Множество мелких изменений в выпадении предметов, рецептах и ​​арте, а также в скорости роста растений и эффектах зелий. Также убраны неудачи с факелами.</td>
-</tr>
-<tr>
-<td id="five">1.4.0.4</td>
-<td>23 мая 2020</td>
-<td>Исправления</td>
-<td>Оптимизация производительности, исправления для управления памятью, а также исправления сбоев и ошибок.</td>
-</tr>
-<tr>
-<td id="five">1.4.0.5</td>
-<td>4 июня 2020</td>
-<td>Исправления</td>
-<td>Мини-событие «Бог Факелов». Множество оптимизаций, исправлений ошибок и сбоев.</td>
-</tr>
-<tr>
-<td id="five">1.4.1</td>
-<td>13 октября 2020</td>
-<td>Завершение путешествия</td>
-<td>Конкурсные комплекты Journey's End, титры, НИП принцесса, изменения баланса аксессуаров.</td>
-</tr>
-<tr>
-<td id="five">1.4.1.1</td>
-<td>14 октября 2020</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.4.1.2</td>
-<td>10 ноября 2020</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.4.2</td>
-<td>29 марта 2021</td>
-<td>Поддержка Мастерской Steam.</td>
-<td>Поддержка обмена текстурпаками и файлами мира в Мастерской Steam.</td>
-</tr>
-<tr>
-<td id="five">1.4.2.1</td>
-<td>31 марта 2021</td>
-<td>Исправления</td>
-<td></td>
-</tr>
-<tr>
-<td id="five">1.4.2.2</td>
-<td>21 апреля 2022</td>
-<td>Исправления</td>
-<td>Устранение багов</td>
-</tr>
-<tr>
-<td id="five">1.4.2.3</td>
-<td>16 мая 2022</td>
-<td>10th летнее юбилейное обновление</td>
-<td>Исправления и секретный сид мира (Celebrationmk10).</td>
-</tr>
-<tr>
-<td id="five">1.4.3</td>
-<td>18 ноября 2022</td>
-<td>Кроссовер обновление "Глаз за глаз" (An Eye For An Eye: Don't Starve Together Crossover Update)</td>
-<td>Был добавлен Циклоолень из игры Don't Starve Together и секретный сид.</td>
-</tr>
-<tr>
-<td id="five">1.4.3.1</td>
-<td>22 ноября 2022</td>
-<td>Исправления</td>
-<td>Маленькие балансные изменения и устранение багов</td>
-</tr>
-<tr>
-<td id="five">1.4.3.2</td>
-<td>24 ноября 2022</td>
-<td>Исправления</td>
-<td>Маленькие балансные изменения и устранение багов</td>
-</tr>
-<tr>
-<td id="five">1.4.3.3</td>
-<td>24 февраля 2022</td>
-<td>Исправления</td>
-<td>Оптимизация для Steam Deck, изменения баланса и устранение багов.</td>
-</tr>
-<tr>
-<td id="five">1.4.3.4</td>
-<td>24 февраля 2022</td>
-<td>Исправления</td>
-<td>Устранение багов</td>
-</tr>
-<tr>
-<td id="five">1.4.3.5</td>
-<td>28 февраля 2022</td>
-<td>Исправления</td>
-<td>Устранение багов</td>
-</tr>
-<tr>
-<td id="five">1.4.3.6</td>
-<td>1 марта 2022</td>
-<td>Исправления</td>
-<td>Устранение багов</td>
-</tr>
-</table>
-<h2> усі Сложності </h2>
-<table> 
-<tr>
-<td>Назва</td> 
-<td>основна інформація </td>
-<td>добавленя</td>
-<td>Версія створеня</td>
-</tr>   
-<tr>
-<td><img src="https://terraria.wiki.gg/images/3/32/Journey_Mode.png">путешествия</td>
-<td>Возможность влиять на спавн мобов и прочие механики;
-Возможность на смену сложности мобов;
-Возможность на включение режима бога;
-Возможность менять скорость возрождения мобов;
-Возможность дублировать предметы и брать их неограниченное количество (дублировать — делать из стака (или меньшего количества) этот предмет в бесконечном количестве);
-Предметы выдаваемые в начале лучше</td>
-<td>_1.4_</td>
-    </tr>
-    <tr> 
-<td><img src="https://terraria.wiki.gg/images/thumb/2/2b/Classic_Mode.png/14px-Classic_Mode.png">класика</td>
-<td>Мир никак не меняется.
-При смерти выпадает 50% монет.</td>
-<td>___</td>
-<td>  з створеня </td>
-</tr>
-    <tr>
-<td><img src="//terraria.wiki.gg/images/6/62/Expert_Mode.png">експерт</td>
-<td>У каждого босса и моба в 2 раза больше ХП и урона;
-С каждого босса падает особый мешок, в котором находится обычный лут и дополнительный предмет для эксперта;
-С мешка Стены плоти можно получить Сердце демона, использовать и тем самым увеличить макс. количество слотов для аксессуаров на 1;
-Глаз Ктулху теперь делает гиперзвуковые рывки в сторону персонажа (третья фаза), чем меньше ХП, тем быстрее рывки;
-Изменён ИИ некоторых боссов.
-Герцог Рыброн теперь имеет третью фазу, в которой делает постоянные рывки в сторону персонажа и нанося больше урона;
-Увеличен шанс получения некоторых предметов с мобов и боссов;
-При смерти падает 75% монет.</td>
-<td>_1.3_</td>
-    </tr>
-<tr> 
-<td><img src="https://terraria.wiki.gg/images/thumb/9/9b/Master_Mode.png/14px-Master_Mode.png">майстер</td>
-<td>У каждого босса и моба в 3 раза больше ХП и урона;
-С каждого босса падает особый мешок , в котором находится обычный лут и дополнительный предмет для эксперта и мастера;
-С мешка Стены плоти можно получить Сердце демона, использовать и тем самым увеличить макс. количество слотов для аксессуаров на 1;
-Глаз Ктулху теперь делает гиперзвуковые рывки в сторону персонажа (третья фаза), чем меньше ХП, тем быстрее рывки;
-Изменён ИИ некоторых боссов.
-Герцог Рыброн теперь имеет третью фазу, в которой делает постоянные рывки в сторону персонажа и нанося больше урона;
-В начале игры доступно целых 6 слотов для аксессуаров, нежели чем 5 в классике;
-С каждого босса падает его реликвия (золотая статуя), которая будет немного парить над своей плитой;
-С каждого босса может выпасть особый предмет призыва питомца, питомец будет всегда выглядеть как сам босс в уменьшенном виде;
-Сильнее увеличен шанс получения некоторых предметов с мобов и боссов;
-При смерти падает 100% монет.</td>
-</tr>
-</table>
-</main>
-<footer>
-
-
-</footer> 
-</body>   
+    <head>
+        <title>
+            Bakelit, Fatulin, Katalin.
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <button class="them"><span>Точно?</span><span>поміняти тему</span></button>
+            </nav>
+        </header>
+        <main>
+            <h1 class="title">Bakelit, Fatulin, Katalin. </h1>
+            <h1 class="ab">Bakelit</h1>
+            <section>
+                <article>
+                <img src="">
+                <p></p>
+                </article>
+                <article>
+                    <img src="">
+                    <p></p>
+                </article>
+                <article>
+                    <img src="">
+                    <p></p>
+                </article>
+            </section>
+            <h1 class="ab1"> Fatulin</h1>
+           <section>
+                <article>
+                    <img src="">
+                    <p></p>
+                </article>
+                <article>
+                    <img src="">
+                    <p></p>
+                </article>
+                <article>
+                    <img src="">
+                    <p></p>
+                </article>
+            </section>
+            <h1 class="ab2">Katalin </h1>
+           <section>
+                <article>
+                    <img src="">
+                    <p></p>
+                </article>
+                <article>
+                    <img src="">
+                    <p></p>
+                </article>
+                <article>
+                    <img src="">
+                    <p></p>
+                </article>
+            </section>
+           
+        </main>
+        <footer>
+            <h1 class="klass">телефон</h1>
+            <h1 class="klass">telegram dělnika sajta: 55467</h1>
+        </footer>
+     <script src="main.js"></script>
+    </body>
+</html>
