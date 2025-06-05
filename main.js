@@ -5,62 +5,25 @@ them.addEventListener("click", mouserr );
 
 let body = document.querySelector('body');
 
-let header = document.querySelector('header');
+let main = document.querySelector('main')
 
-let title = document.querySelector('.title');
-
-let ab = document.querySelector('.ab');
-
-let ab1 = document.querySelector('.ab1');
-
-let ab2 = document.querySelector('.ab2');
-
-let footer = document.querySelector('footer')
-
-let klass = document.querySelectorAll('.klass')
-
+let lodo = document.querySelector('.lodo')
 
 let them2 = "white"
+      console.log('hello')
 
-
-function  mouserr(){
-   if (them2 == "white"){
-   body.style.backgroundColor = '#000000';
-   header.style.backgroundColor = '#ffffff'
-   title.style.color = '#ffffff'
-   ab.style.color = '#ffffff'
-   ab1.style.color = '#ffffff'
-   ab2.style.color = '#ffffff'
-   footer.style.backgroundColor = '#ffffff'
-   for (let i=0;i<h3.length;i+=1){
-      h3[i].style.background = "#ffffff"
-      h3[i].style.color  = "#000000"
-      console.log("привіт")
-   }
-   for (let i=0;i<klass.length;i+=1){
-       klass[i].style.color  = "#000000"
-       console.log("привіт")
-   }
-   them2 = "black"
+   function  mouserr(){
+      console.log('hello')
+      if (them2 == "white"){
+      main.style.background = 'rgba(45, 46, 65, 0.45)'
+      lodo.src = "https://terraria.wiki.gg/images/thumb/d/d2/Site-logo-underground.png/181px-Site-logo-underground.png?55956c"
+      body.style.backgroundImage = `url("https://terraria.wiki.gg/images/1/1b/Site-background-underground.jpg")`
+      them2 = "black"
 }
-   else {
-      body.style.backgroundColor = '#ffffff';
-      header.style.backgroundColor = '#000000'
-      title.style.color = '#000000'
-      ab.style.color = '#000000'
-      ab1.style.color = '#000000'
-      ab2.style.color = '#000000'
-      footer.style.backgroundColor = '#000000'
-      for (let i=0;i<h3.length;i+=1){
-         h3[i].style.background = "#000000"
-         h3[i].style.color  = "#ffffff"
-         console.log("привіт")
+      else {
+      main.style.background = 'rgba(164, 89, 15, 0.31)'
+      lodo.src = "https://terraria.wiki.gg/images/9/99/Site-logo-overworld.png"
+      body.style.backgroundImage = `url("https://terraria.wiki.gg/images/0/0e/Site-background-overworld.jpg")`
+      them2 = "white"
       }
-      for (let i=0;i<klass.length;i+=1){
-          klass[i].style.color  = "#ffffff"
-          console.log("привіт")
-      }
-   them2 = "white"
-   }
 }
-

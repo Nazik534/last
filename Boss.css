@@ -1,0 +1,28 @@
+body{
+background-image: url('https://terraria.wiki.gg/images/0/0e/Site-background-overworld.jpg');
+background-size: cover;
+
+}
+.mail{
+display: flex;
+justify-content: center;
+}
+main{
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: rgba(164, 89, 15, 0.31);
+    text-align: center;
+    color: white;
+}
+.boss{
+text-decoration: none;
+border: 25px;
+border-radius: 25px;
+background-color: rgba(164, 89, 15, 0.55);
+font-size: 24px;
+color: white;
+text-decoration: none;
+display: inline;
+justify-content: space-evenly;
+padding: 10px;
+}

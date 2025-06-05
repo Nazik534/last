@@ -1,0 +1,56 @@
+body{
+background-image: url('https://terraria.wiki.gg/images/0/0e/Site-background-overworld.jpg');
+background-size: cover;
+
+}
+.mail{
+display: flex;
+justify-content: center;
+}
+main{
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: rgba(164, 89, 15, 0.31);
+    text-align: center;
+    color: white;
+}
+.love2{
+    color: rgb(30, 189, 54);
+}
+table {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+
+}
+.i_alveis_combec{
+    border-radius: 20px;
+    background-color: rgba(164, 89, 15, 0.605);
+}
+.git{
+    display: flex;
+    justify-content: space-evenly;
+}
+.foto{
+    width: 60px;
+    height: 25px;
+}
+.forest{
+    width: 25px;
+    height: 35px;
+}
+p{
+    font-size: 25px;
+}
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: monospace;
+}
+
+header {
+  background-color: #f1f1f1;
+  margin-bottom: 25px;
+  padding: 15px;
+  box-shadow: 0px 0px 3px 0px rgba(118, 118, 118, 1);
+}
